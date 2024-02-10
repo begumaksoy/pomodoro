@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="buttons.css" />
-    <script src="pomodoro.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pomodoro</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="center">
-        <p id="counter" class="counter">25:00</p>
-        <button onclick="pomodoro_time()" class="pomodoro_button">
-          pomodoro
-        </button>
-        <button onclick="short_b_time()" class="short_break_button">
-          short break
-        </button>
-        <button onclick="long_b_time()" class="long_break_button">
-          long break
-        </button>
-        <button id="start-stop" onclick="start_time()" class="start_button">
-          start
-        </button>
-      </div>
-    </div>
-  </body>
+    <head>
+        <link rel="stylesheet" href="buttons.css" />
+        <script src="pomodoro.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pomodoro</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <input
+                    type="text"
+                    id="item"
+                    class="task-input"
+                    placeholder="Enter a task..."
+                />
+                <p id="counter" class="counter">25:00</p>
+                <button onclick="pomodoro_time()" class="pomodoro_button">
+                    pomodoro
+                </button>
+                <button onclick="short_b_time()" class="short_break_button">
+                    short break
+                </button>
+                <button onclick="long_b_time()" class="long_break_button">
+                    long break
+                </button>
+                <button
+                    id="start-stop"
+                    onclick="start_time()"
+                    class="start_button"
+                >
+                    start
+                </button>
+                <div class="pf_div">
+                    <button
+                        class="pause_button"
+                        id="pause-button"
+                        onclick="pause()"
+                    >
+                        Pause
+                    </button>
+                    <button
+                        onclick="add()"
+                        class="finished_button"
+                        id="finished_button"
+                    >
+                        Task Is Finished
+                    </button>
+                </div>
+                <ul class="task-list"></ul>
+                <!--tasks go here-->
+            </div>
+        </div>
+    </body>
 </html>

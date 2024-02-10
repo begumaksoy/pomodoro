@@ -1,5 +1,5 @@
 .pomodoro_button{
-    background-color: rgba(126, 78, 170, 0.91);
+    background-color: #FFD1D1;
     border: none;
     color: white;
     height: 36px;
@@ -16,7 +16,7 @@
 }
 
 .short_break_button{
-    background-color: rgba(126, 78, 170, 0.91);
+    background-color: #FFD1D1;
     border: none;
     color: white;
     height: 36px;
@@ -33,7 +33,7 @@
 }
 
 .long_break_button{
-    background-color: rgba(126, 78, 170, 0.91);
+    background-color: #FFD1D1;
     border: none;
     color: white;
     height: 36px;
@@ -50,7 +50,7 @@
 }
 
 .start_button{
-    background-color: #2f2f2f;
+    background-color: #FFB996;
     border: none;
     color: white;
     height: 36px;
@@ -59,7 +59,6 @@
     border-radius: 3px;
     cursor: pointer;
     display: block;
-    
 }
 
 .stop_button{
@@ -89,15 +88,74 @@ body, html{
 }
 
 body {
-    background-color: hsl(280, 33%, 93%);
+    background-color: #FFF5E4;
 }
 
 .counter {
     font-size:6rem;
     text-align: center;
-    color:#2f2f2f;
+    color: #FF9494;
 }
 
 p{
     margin: 0;
+}
+
+
+.add_finish_button{
+    display: flex;
+    justify-content: center;
+    height: 36px;
+
+
+}
+
+.task-input{
+    height: 36px;
+    box-sizing: border-box;
+    background-color: #FFCF81;
+    border-color: #E78895;
+    border-style: solid;
+    color: white;
+    width: 100%;
+    opacity: 0.8;
+    display: block;
+}
+.add_task_button{
+    cursor: pointer;
+    flex: 1 0 50%;
+    margin-right: 0.5em;
+}
+
+.finished_button{
+    margin-top: 0.5em;
+    flex: 1 0 50%;
+    border: none;
+    color: white;
+    height: 36px;
+    display: none;
+    background-color: #FFCF81;
+cursor: pointer;
+  flex: 1 0 50%;
+  box-sizing: border-box;
+    width: 100%;
+}
+
+.pause_button{
+    margin-top: 0.5em;
+    flex: 1 0 50%;
+    background-color: #FFB996;
+    border: none;
+    color: white;
+    height: 36px;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+::placeholder{
+    color: white;
+    font-size: medium;
+    opacity: none;
+
 }
