@@ -1,5 +1,34 @@
+
+.header{
+    width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: white;
+  padding: 0.5px 0;
+  border-bottom: rgba(0, 0, 0, 0.122) solid 0.5px;
+}
+.header-text{
+    color: #404258;
+    font-family: 'Courier New', monospace;
+    padding-left: 15px;
+}
+.line
+{
+  height: 1px;
+  background-image: linear-gradient(90deg,rgba(0,0,0,0.00) 0%,#000000 50%,rgba(0,0,0,0.00) 100%);
+  opacity: .1;
+  width: 100%;
+}
+.line-bottom{max-width: 900px;
+    max-height: 1750px;
+    border: #bfa161 solid 3px;
+    margin: 0 auto;
+}
 .pomodoro_button{
-    background-color: #FFD1D1;
+    background-color: #ff5a5a;
     border: none;
     color: white;
     height: 36px;
@@ -16,7 +45,7 @@
 }
 
 .short_break_button{
-    background-color: #FFD1D1;
+    background-color: #ff5a5a;
     border: none;
     color: white;
     height: 36px;
@@ -33,7 +62,7 @@
 }
 
 .long_break_button{
-    background-color: #FFD1D1;
+    background-color: #ff5a5a;
     border: none;
     color: white;
     height: 36px;
@@ -50,7 +79,7 @@
 }
 
 .start_button{
-    background-color: #FFB996;
+    background-color: #404258;
     border: none;
     color: white;
     height: 36px;
@@ -88,13 +117,13 @@ body, html{
 }
 
 body {
-    background-color: #FFF5E4;
+    background-color: #f5f8fc;
 }
 
 .counter {
     font-size:6rem;
     text-align: center;
-    color: #FF9494;
+    color: #ff5a5a;
 }
 
 p{
@@ -110,13 +139,13 @@ p{
 
 }
 
-.task-input{
+.task_input{
     height: 36px;
     box-sizing: border-box;
-    background-color: #FFCF81;
-    border-color: #E78895;
+    background-color: white;
+    border-color: #ff5a5a;
     border-style: solid;
-    color: white;
+    color: #ff5a5a;
     width: 100%;
     opacity: 0.8;
     display: block;
@@ -134,7 +163,7 @@ p{
     color: white;
     height: 36px;
     display: none;
-    background-color: #FFCF81;
+    background-color: #404258;
 cursor: pointer;
   flex: 1 0 50%;
   box-sizing: border-box;
@@ -144,7 +173,7 @@ cursor: pointer;
 .pause_button{
     margin-top: 0.5em;
     flex: 1 0 50%;
-    background-color: #FFB996;
+    background-color: #404258;
     border: none;
     color: white;
     height: 36px;
@@ -154,7 +183,7 @@ cursor: pointer;
 }
 
 ::placeholder{
-    color: white;
+    color: #ff5a5a;
     font-size: medium;
     opacity: none;
 

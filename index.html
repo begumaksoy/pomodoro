@@ -8,22 +8,38 @@
         <title>Pomodoro</title>
     </head>
     <body>
+        <div class="header">
+            <h1 class="header-text">Study with me</h1>
+        </div>
+        <div class="line-bottom"></div>
         <div class="container">
             <div class="center">
                 <input
                     type="text"
                     id="item"
-                    class="task-input"
+                    class="task_input"
                     placeholder="Enter a task..."
                 />
                 <p id="counter" class="counter">25:00</p>
-                <button onclick="pomodoro_time()" class="pomodoro_button">
+                <button
+                    onclick="pomodoro_time()"
+                    class="pomodoro_button"
+                    id="pomodoro_button"
+                >
                     pomodoro
                 </button>
-                <button onclick="short_b_time()" class="short_break_button">
+                <button
+                    onclick="short_b_time()"
+                    class="short_break_button"
+                    id="short_break_button"
+                >
                     short break
                 </button>
-                <button onclick="long_b_time()" class="long_break_button">
+                <button
+                    onclick="long_b_time()"
+                    class="long_break_button"
+                    id="long_break_button"
+                >
                     long break
                 </button>
                 <button
@@ -39,14 +55,14 @@
                         id="pause-button"
                         onclick="pause()"
                     >
-                        Pause
+                        pause
                     </button>
                     <button
                         onclick="add()"
                         class="finished_button"
                         id="finished_button"
                     >
-                        Task Is Finished
+                        task is finished
                     </button>
                 </div>
                 <ul class="task-list"></ul>
