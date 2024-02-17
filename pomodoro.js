@@ -96,6 +96,12 @@ function every_time() {
         ":" +
         String(time % 60).padStart(2, "0");
     if (time <= 0) {
+        if (input.value != "") {
+            tasksArray.push(input.value);
+            localStorage.setItem("tasks", JSON.stringify(tasksArray));
+            addTask(input.value);
+            input.value = "";
+        }
         sound.play();
         finish();
     }
