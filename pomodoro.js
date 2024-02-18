@@ -26,6 +26,8 @@ window.onload = () => {
     finished_button = document.getElementById("finished_button");
     pause_button = document.getElementById("pause-button");
     add_new_button = document.getElementById("add_new_button");
+    pomodoro_button.style =
+        "background-color: white; border-color: #ff5a5a; border-style: solid; color: #ff5a5a;";
 
     tasksArray.forEach(addTask);
 };
@@ -96,11 +98,8 @@ function every_time() {
         ":" +
         String(time % 60).padStart(2, "0");
     if (time <= 0) {
-        if (input.value != "") {
-            tasksArray.push(input.value);
-            localStorage.setItem("tasks", JSON.stringify(tasksArray));
-            addTask(input.value);
-            input.value = "";
+        if (prev_time == 1500) {
+            add();
         }
         sound.play();
         finish();
